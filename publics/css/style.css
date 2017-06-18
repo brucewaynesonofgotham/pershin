@@ -28,9 +28,21 @@
     border: 1px solid rgba(191, 191, 191, 0.25);
 }
 
-#result {
+#result,
+#home,
+#profile,
+#messages{
     height: 345px;
     width: 100%;
     border: none;
     background-color: #ffffff;
+}
+
+.progress{
+    height: 15px;
+    width: 220px;
+    float: right;
+    position: relative;
+    top: 8px;
+    right: 15px;
 }
