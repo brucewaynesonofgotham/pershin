@@ -1,7 +1,4 @@
-var iframe = document.querySelector('iframe');
-var doc = iframe.contentWindow.document;
-var script = doc.createElement('script');
-doc.head.appendChild(script);
+var result = document.getElementById('result')
 var checkButton = document.getElementById('checkButton');
 /*Переменные для храненения текущего значения редакторов*/
 var currentHTML;
@@ -11,7 +8,7 @@ function aceHTML() {
     var editor = ace.edit("editorHTML");
     editor.getSession().setMode("ace/mode/html");
     editor.getSession().on('change', function () {
-        doc.body.innerHTML = editor.getValue();
+        result.innerHTML = editor.getValue();
         currentHTML = editor.getValue();
     });
     editor.setValue('<p>Привет, Яша</p>');
@@ -27,7 +24,8 @@ function aceJS() {
         }
     });
 
-    editor.setValue('');
+    editor.setValue("var iframe = document.querySelector('iframe');\n" +
+    "var doc = iframe.contentWindow.document;");
 }
 
 aceHTML();

@@ -28,7 +28,7 @@
     border: 1px solid rgba(191, 191, 191, 0.25);
 }
 
-iframe {
+#result {
     height: 345px;
     width: 100%;
     border: none;
