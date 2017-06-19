@@ -28,7 +28,8 @@
 
 #result,
 #sample,
-#difference{
+#difference,
+#goggi{
     height: 345px;
     width: 100%;
     border: none;
@@ -48,4 +49,8 @@
 .nav-tabs>li.not-left-border>a:focus,
 .nav-tabs>li.not-left-border>a:hover{
     border-left-color: transparent;
+}
+
+.progress-bar{
+    transition: width 2s, background-color 2s;
 }

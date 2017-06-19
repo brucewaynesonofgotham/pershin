@@ -76,9 +76,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
+                <a href="#" class="btn btn-info pull-right btn-xs disabled" role="button" style="position: absolute; top: 11px; right: 40px;z-index: 5;">HTML</a>
                 <div class="col-md-12">
                     <div id="editorHTML"></div>
                 </div>
+                <a href="#" class="btn btn-info pull-right btn-xs disabled" role="button" style="width: 45px;position: absolute; top: 420px; right: 40px;z-index: 5;">JS</a>
                 <div class="col-md-12">
                     <div id="editorJS"></div>
                 </div>
@@ -97,10 +99,12 @@
                         <ul class="nav nav-tabs">
                             <li role="presentation" class="not-left-border"><a href="#sample" aria-controls="sample" role="tab" data-toggle="tab">Образец</a></li>
                             <li role="presentation"><a href="#difference" aria-controls="difference" role="tab" data-toggle="tab">Разность</a></li>
+                            <li role="presentation"><a href="#goggi" aria-controls="goggi" role="tab" data-toggle="tab">Goggi</a></li>
                         </ul>
                         <div class="tab-content" style="overflow: scroll">
                             <div role="tabpanel" class="tab-pane active" id="sample"><img src="publics/images/hello.jpg" alt=""></div>
                             <div role="tabpanel" class="tab-pane" id="difference"></div>
+                            <div role="tabpanel" class="tab-pane" id="goggi"></div>
                         </div>
                     </div>
                     <div class="row">
@@ -108,7 +112,7 @@
                         <button type="button" class="btn btn-info btn-md" id="checkButton"><i class="fa fa-cog" aria-hidden="true"></i> Проверить</button>
                         <button id="next-task" type="button" class="btn btn-success btn-md pull-right" disabled="disabled">Следующее задание</button>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <div id="progressbar" class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                                 <span class="sr-only">60% Complete</span>
                             </div>
                         </div>
@@ -190,11 +194,11 @@
 <script src="http://huddle.github.io/Resemble.js/resemble.js"></script>
 <script src="publics/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/g/ace@1.2.3(min/ace.js+min/ext-emmet.js+min/mode-html.js)" charset="UTF-8" type="text/javascript"></script>
+<script src="publics/js/html2canvas.js"></script>
 <script src="publics/js/acejs.js"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
-<script src="publics/js/html2canvas.js"></script>
 <script src="publics/js/comparison.js"></script>
-
+<script src="publics/js/progressbar.js"></script>
 </body>
 </html>

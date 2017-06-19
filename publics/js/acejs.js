@@ -20,9 +20,9 @@ function aceJS() {
     editor.getSession().setMode("ace/mode/javascript");
     editor.getSession().on('change', function () {
         currentJS = editor.getValue();
-        checkButton.onclick = function () {
+        checkButton.addEventListener('click', function () {
             eval(currentJS);
-        }
+        })
     });
 
     editor.setValue("");
