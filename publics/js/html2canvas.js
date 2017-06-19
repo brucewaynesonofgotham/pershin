@@ -1,10 +1,10 @@
-var theory = document.getElementById('theory');
 var resultScreen = document.getElementById('result');
-var homeScreen = document.getElementById('home');
-theory.onclick = function () {
+var diffScreen = document.getElementById('difference');
+checkButton.addEventListener("click", function () {
     html2canvas(resultScreen, {
         onrendered: function(canvas) {
-            homeScreen.appendChild(canvas);
+            diffScreen.appendChild(canvas);
+            canvasImg = canvas;
         }
     });
-}
+});

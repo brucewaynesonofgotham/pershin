@@ -1,8 +1,7 @@
 var img1 = document.querySelector('#home>img');
-var img2 = document.querySelector('#profile>img');
-var theory = document.getElementById('theory');
-theory.onclick = function(){
-    resemble(img1.src).compareTo(img2.src).ignoreColors().onComplete(function(data){
+var img2 = document.querySelector('#sample>img');
+checkButton.addEventListener('click', function(){
+    resemble(canvasImg.toDataURL()).compareTo(img2.src).ignoreColors().onComplete(function(data){
         console.log(data);
         alert('Процент разности картинок ' + data.misMatchPercentage);
         /*
@@ -14,4 +13,4 @@ theory.onclick = function(){
          }
          */
     });
-};
+});

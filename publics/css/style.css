@@ -27,9 +27,8 @@
 }
 
 #result,
-#home,
-#profile,
-#messages{
+#sample,
+#difference{
     height: 345px;
     width: 100%;
     border: none;

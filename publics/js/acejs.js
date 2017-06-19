@@ -1,4 +1,5 @@
-var result = document.getElementById('result')
+var canvasImg;
+var result = document.getElementById('result');
 var checkButton = document.getElementById('checkButton');
 /*Переменные для храненения текущего значения редакторов*/
 var currentHTML;
@@ -24,8 +25,7 @@ function aceJS() {
         }
     });
 
-    editor.setValue("var iframe = document.querySelector('iframe');\n" +
-    "var doc = iframe.contentWindow.document;");
+    editor.setValue("");
 }
 
 aceHTML();
