@@ -73,52 +73,44 @@
         </div><!-- /.container-fluid -->
     </nav>
 <!--Тело сайта-->
-    <div class="container damir">
+    <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <div class="col-md-12">
-                    <div id="editorHTML" class="img-rounded"></div>
+                    <div id="editorHTML"></div>
                 </div>
                 <div class="col-md-12">
-                    <div id="editorJS" class="img-rounded"></div>
+                    <div id="editorJS"></div>
                 </div>
             </div>
-            <div class="col-md-6 browser" id="browser">
-                <div class="row">
-                    <ul class="nav nav-tabs">
-                        <li role="presentation" class="active"><a href="#result" aria-controls="result" role="tab" data-toggle="tab">Хуйцы</a></li>
-                        <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-                    </ul>
-                    <div class="tab-content">
+            <div class="col-md-6">
+                <div class="col-md-12 browser" id="browser">
+                    <div class="row">
+                        <ul class="nav nav-tabs">
+                            <li role="presentation" class="active not-left-border"><a href="#result" aria-controls="result" role="tab" data-toggle="tab">Результат</a></li>
+                        </ul>
                         <div role="tabpanel" class="tab-pane active" id="result"></div>
-                        <div role="tabpanel" class="tab-pane" id="home"><img src="publics/images/img1.jpg" alt=""></div>
-                        <div role="tabpanel" class="tab-pane" id="profile"><img src="publics/images/img2.jpg" alt=""></div>
-                        <div role="tabpanel" class="tab-pane" id="messages">...</div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="well well-position">
-                        <button id="first-task" type="button" class="btn btn-xs btn-info" disabled="disabled">1 цель</button>
-                        <p>
-                            Для первого тэга <code>&lt;source&gt;</code> добавьте аттрибут <code>media</code> со значением
-                            <br><code>"(max-width: 500px)"</code>
-                        </p>
-                        <button id="second-task" type="button" class="btn btn-xs btn-info" disabled="disabled">2 цель</button>
-                        <p>
-                            Выполнить аналогичные действия для остальных <code>&lt;source&gt;</code>, используя значения <code>"(max-width: 900px)"</code>
-                            <code>"(max-width: 1600px)"</code>
-                        </p>
+                <div class="col-md-12 browser" style="margin-top: 20px">
+                    <div class="row">
+                        <ul class="nav nav-tabs">
+                            <li role="presentation" class="not-left-border"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Образец</a></li>
+                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Разность</a></li>
+                        </ul>
+                        <div class="tab-content" style="overflow: scroll">
+                            <div role="tabpanel" class="tab-pane active" id="home"><img src="publics/images/img1.jpg" alt=""></div>
+                            <div role="tabpanel" class="tab-pane" id="profile"><img src="publics/images/img2.jpg" alt=""></div>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <button type="button" class="btn btn-info btn-md" id="theory" data-toggle="modal" data-target="#myModal"><i class="fa fa-bookmark" aria-hidden="true"></i> Теория</button>
-                    <button type="button" class="btn btn-info btn-md" id="checkButton"><i class="fa fa-cog" aria-hidden="true"></i> Проверить</button>
-                    <button id="next-task" type="button" class="btn btn-success btn-md pull-right" disabled="disabled">Следующее задание</button>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                            <span class="sr-only">60% Complete</span>
+                    <div class="row">
+                        <button type="button" class="btn btn-info btn-md" id="theory" data-toggle="modal" data-target="#myModal"><i class="fa fa-bookmark" aria-hidden="true"></i> Теория</button>
+                        <button type="button" class="btn btn-info btn-md" id="checkButton"><i class="fa fa-cog" aria-hidden="true"></i> Проверить</button>
+                        <button id="next-task" type="button" class="btn btn-success btn-md pull-right" disabled="disabled">Следующее задание</button>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                <span class="sr-only">60% Complete</span>
+                            </div>
                         </div>
                     </div>
                 </div>

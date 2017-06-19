@@ -1,15 +1,12 @@
-.damir{
-    background: #ffffff;
-}
-
 #editorHTML {
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: 1;
-    height:300px;
-    border: 5px solid rgba(50, 66, 128, 0.5);
+    height:389px;
+    box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(191, 191, 191, 0.25);
 }
 
 #editorJS {
@@ -18,9 +15,10 @@
     bottom: 0;
     left: 0;
     z-index: 1;
-    height:300px;
-    border: 5px solid rgba(50, 66, 128, 0.5);
-    margin-top: 10px;
+    height:400px;
+    margin-top: 20px;
+    box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(191, 191, 191, 0.25);
 }
 
 .browser {
@@ -40,9 +38,15 @@
 
 .progress{
     height: 15px;
-    width: 220px;
+    width: 200px;
     float: right;
     position: relative;
     top: 8px;
     right: 15px;
+}
+
+.nav-tabs>li.not-left-border>a,
+.nav-tabs>li.not-left-border>a:focus,
+.nav-tabs>li.not-left-border>a:hover{
+    border-left-color: transparent;
 }
