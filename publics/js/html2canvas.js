@@ -3,7 +3,7 @@ var img2 = document.querySelector('#sample>img');
 var diffImg = new Image();
 var difference = document.getElementById('difference');
 var barValue = document.getElementById('progressbar');
-
+var nextTask =  document.getElementById('next-task');
 
 //Целочисленное деление
 function div(val, by){
@@ -29,6 +29,7 @@ checkButton.addEventListener("click", function () {
                     barValue.style.backgroundColor = 'orange';
                 }else{
                     barValue.style.backgroundColor = 'green';
+                    nextTask.removeAttribute("disabled");
                 }
                 barValue.style.width = diffValue + '%';
                 barValue.innerHTML = diffValue + '% Complete';
