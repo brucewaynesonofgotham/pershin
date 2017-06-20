@@ -1,26 +1,33 @@
-var img1 = document.querySelector('#home>img');
-var img2 = document.querySelector('#sample>img');
-var diffImg = new Image();
-var goggi = document.getElementById('goggi');
 
-
-
+//Целочисленное деление
+/*
+function div(val, by){
+    return (val - val % by);
+}
+//Переменная для хранения значения схожести картинок
+var diffValue;
 checkButton.addEventListener('click', function(){
-     resemble(canvasImg.toDataURL()).compareTo(img2.src).ignoreColors().onComplete(function(data){
+     resemble(canvasImg.toDataURL()).compareTo(img2.src).onComplete(function(data){
         console.log(data);
-        alert('Процент разности картинок ' + data.misMatchPercentage);
+         diffValue = data.misMatchPercentage;
          diffImg.src = data.getImageDataUrl();
          goggi.appendChild(diffImg);
-        /*
-         {
-         misMatchPercentage : 100, // %
-         isSameDimensions: true, // or false
-         dimensionDifference: { width: 0, height: -1 }, // defined if dimensions are not the same
-         getImageDataUrl: function(){}
+         diffValue = 100 - diffValue;
+         /!*barValue.style.width = '90%';
+          barValue.style.backgroundColor = 'red';*!/
+         if (diffValue < 40){
+             barValue.style.backgroundColor = 'red';
+         }else if(diffValue < 90){
+             barValue.style.backgroundColor = 'orange';
+         }else{
+             barValue.style.backgroundColor = 'green';
          }
-         */
-    });
+         barValue.style.width = diffValue + '%';
+         barValue.innerHTML = diffValue + '% Complete';
+         barValue.classList.add('progress-bar-striped');
+     });
 });
+*/
 
 
 
